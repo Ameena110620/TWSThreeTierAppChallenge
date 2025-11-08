@@ -37,10 +37,10 @@ spec:
               secretKeyRef:
                 name: mongo-sec
                 key: password
-        volumeMounts:
+        #volumeMounts:
           - name: mongo-volume
             mountPath: /data/db
-      volumes: 
+      #volumes: 
       - name: mongo-volume
         persistentVolumeClaim:
           claimName: mongo-volume-claim
